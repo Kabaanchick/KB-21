@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Lab3_LastName_Group.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Lab3_LastName_Group.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">text</span><span class="s2">.</span><span class="s1">MessageFormat</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">class </span><span class="s1">Lab3_LastName_Group </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Введіть ціле число: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">integerValue </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Введіть число з плаваючою точкою: &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">doubleValue </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Введіть строку: &quot;</span><span class="s2">);</span>
+        <span class="s1">String stringValue </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Введіть логічне значення (true/false): &quot;</span><span class="s2">);</span>
+        <span class="s0">boolean </span><span class="s1">booleanValue </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextBoolean</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">========== 1. System.out.println ==========&quot;</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Ціле число: &quot; </span><span class="s2">+ </span><span class="s1">integerValue</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Дійсне число: &quot; </span><span class="s2">+ </span><span class="s1">doubleValue</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Строка: &quot; </span><span class="s2">+ </span><span class="s1">stringValue </span><span class="s2">+ </span><span class="s3">&quot;, логічне значення: &quot; </span><span class="s2">+ </span><span class="s1">booleanValue</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">========== 2. MessageFormat ==========&quot;</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">MessageFormat</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span>
+                <span class="s3">&quot;Числа: ціле = {0}, дійсне = {1}&quot;</span><span class="s2">, </span><span class="s1">integerValue</span><span class="s2">, </span><span class="s1">doubleValue</span><span class="s2">));</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">MessageFormat</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span>
+                <span class="s3">&quot;Дані: {0} | {1} | {2}&quot;</span><span class="s2">, </span><span class="s1">integerValue</span><span class="s2">, </span><span class="s1">stringValue</span><span class="s2">, </span><span class="s1">booleanValue</span><span class="s2">));</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">MessageFormat</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span>
+                <span class="s3">&quot;Дійсне число у валютному форматі: {0,number,currency}&quot;</span><span class="s2">, </span><span class="s1">doubleValue</span><span class="s2">));</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">MessageFormat</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span>
+                <span class="s3">&quot;Дійсне число у відсотковому форматі: {0,number,percent}&quot;</span><span class="s2">, </span><span class="s1">doubleValue</span><span class="s2">));</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">========== 3. System.out.format ==========&quot;</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span><span class="s3">&quot;Ціле число у десятковому форматі: %d%n&quot;</span><span class="s2">, </span><span class="s1">integerValue</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span><span class="s3">&quot;Ціле число у шістнадцятковому форматі: %x%n&quot;</span><span class="s2">, </span><span class="s1">integerValue</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span><span class="s3">&quot;Строка: %-15s | Дійсне: %10.2f | Логічне: %b%n&quot;</span><span class="s2">,</span>
+                <span class="s1">stringValue</span><span class="s2">, </span><span class="s1">doubleValue</span><span class="s2">, </span><span class="s1">booleanValue</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
